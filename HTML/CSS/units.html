@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            Absolute unit - အရွယ်အစားကို အတိအကျ အသေသတ်မှတ်
+                px (pixels) - button, icon, image
+                            - heading, label
+                pt (point), cm , mm, in - print ထုတ်တဲ့အခါတွေသုံး
+            Relative unit    
+        */
+        button {
+            border: 1px solid black;
+            padding: 10px 30px;
+        }
+
+        /* 
+            percentage (%) - parent element ရဲ့ အရွယ်အစားပေါ်မူတည်ပြီးပြောင်း
+        */
+        .container {
+            margin-top: 20px;
+            width: 100%;
+            background-color: aquamarine;
+        }
+
+        .box {
+            width: 50%;  /* Container width ရဲ့ 50% */
+            padding: 2%; /* Container width ရဲ့ 2%*/
+            background-color: lightsalmon;
+        }
+
+        /* 
+            element (em) - parent element ရဲ့ font size ပေါ်မူတည်
+        */
+
+        .em-container {
+            font-size: 20px;
+        }
+
+        .normal-text {
+            font-size: 1em; /* 1em  x 20px = 20px */
+        }
+
+        .large-text {
+            font-size: 2em; /* 2em x 20px =40px*/
+        }
+
+        .em-box {
+            font-size: 20px;
+        }
+
+        .em-box p {
+            border: 1px solid black;
+            padding: 1em;
+            margin: 2em;
+        }
+
+        .header {
+            /* 1 x 16 =16px */
+            font-size: 1rem;
+        }
+
+        .title {
+            /*  2 x 16 = 32 */
+            font-size: 2rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-top: 3rem;
+        }
+
+        /* vw,vh- view port width, height 100*/
+
+        .vw-container {
+            width: 50vw;
+            height: 90px;
+            background-color: lightcoral;
+            font-size: 2vw;
+        }
+
+        .fullscreen-header {
+            height: 100vh;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <button>Save</button>
+
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+    <!-- em -->
+    <div class="em-conatiner">
+        <p class="normal-text">Normal Text</p>
+        <p class="large-text">large text</p>
+    </div>
+
+    <div class="em-box">
+        <p>box content</p>
+    </div>
+
+    <!-- rem -->
+    <div class="header">
+        <p class="title">Title</p>
+        <p class="description">This is rem</p>
+    </div>
+
+    <!-- vw view port height -->
+     <header class="vw-container">
+        <p>This is view port width</p>
+     </header>
+
+     <!-- vh view port height -->
+      <header class="fullscreen-header">
+        <p>This is header takes up 100vh</p>
+      </header>
+</body>
+</html>
