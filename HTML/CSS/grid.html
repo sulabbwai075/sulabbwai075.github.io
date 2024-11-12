@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* fe -fraction ညီတူညီမျှ ခွဲပေး */
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-columns: repeat(3, 1fr);*/
+            grid-template-rows: 1fr 1fr 1fr;
+            /* grid-template-crows: repeat(1,2fr); */
+
+            /* columnn-gap -20px */
+            /* row-gap: 30px; */
+            /* gap: row col; */
+            gap: 10px 10px;
+        }
+
+        .grid-item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item1 {
+            background-color: antiquewhite;
+            /* line1 | column 1, line2 | column2, line3 | column3, line4 */
+            /* grid-column: colနေရာ  ဘယ် line ထိပေါ်မလဲ */
+            grid-column: 1 / 3;
+            grid-row: 2;
+        }
+        .item3 {
+            background-color: rgb(194, 143, 241);
+            grid-column: 3;
+            grid-row: 1;
+        }
+        .item4 {
+            background-color: aqua;
+            grid-column: 1;
+            grid-row: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="grid-item item1">
+        <h3>Header 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis reprehenderit tempore laudantium quisquam eaque necessitatibus, amet consectetur recusandae voluptates fugiat ipsum cumque ea aliquid repudiandae adipisci, non minus blanditiis?</p>
+    </div>
+    <div class="grid-item item2">
+        <h3>Header 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis reprehenderit tempore laudantium quisquam eaque necessitatibus, amet consectetur recusandae voluptates fugiat ipsum cumque ea aliquid repudiandae adipisci, non minus blanditiis?</p>
+    </div>
+    <div class="grid-item item3">
+        <h3>Header 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis reprehenderit tempore laudantium quisquam eaque necessitatibus, amet consectetur recusandae voluptates fugiat ipsum cumque ea aliquid repudiandae adipisci, non minus blanditiis?</p>
+    </div>
+    <div class="grid-item item4">
+        <h3>Header 4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis reprehenderit tempore laudantium quisquam eaque necessitatibus, amet consectetur recusandae voluptates fugiat ipsum cumque ea aliquid repudiandae adipisci, non minus blanditiis?</p>
+    </div>
+    <div class="grid-item item5">
+        <h3>Header 5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis reprehenderit tempore laudantium quisquam eaque necessitatibus, amet consectetur recusandae voluptates fugiat ipsum cumque ea aliquid repudiandae adipisci, non minus blanditiis?</p>
+    </div>
+    <div class="grid-item item6">
+        <h3>Header 6</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis reprehenderit tempore laudantium quisquam eaque necessitatibus, amet consectetur recusandae voluptates fugiat ipsum cumque ea aliquid repudiandae adipisci, non minus blanditiis?</p>
+    </div>
+    <div class="grid-item item7">
+        <h3>Header 7</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quis reprehenderit tempore laudantium quisquam eaque necessitatibus, amet consectetur recusandae voluptates fugiat ipsum cumque ea aliquid repudiandae adipisci, non minus blanditiis?</p>
+    </div>
+    </div>
+</body>
+</html>
