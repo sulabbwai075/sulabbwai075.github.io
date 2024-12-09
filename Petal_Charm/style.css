@@ -434,9 +434,10 @@ footer {
     font: 1.5em;
 }
 
-.footer-bottom {
+.bottom {
     text-align: center;
-    padding: 10px;
-    background-color: #eac4c4;
+    justify-content: center;
+    padding: 20px;
+    background-color: #FAFAFA;
     color: brown;
 }
